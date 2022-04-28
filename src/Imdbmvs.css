@@ -1,0 +1,10 @@
+.disp {
+  /* display: flex; */
+  float: right;
+
+  /* flex-direction: row-reverse; */
+}
+.container {
+  width: 50vw;
+  height: 50vh;
+}
