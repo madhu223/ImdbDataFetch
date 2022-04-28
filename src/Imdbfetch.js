@@ -100,7 +100,7 @@ function Imdbfetch() {
           <thead>
             <tr>
               <th>S.NO</th>
-              <th>ID</th>
+              {/* <th>ID</th> */}
               <th>TITLE</th>
               <th>DESCRIPTION</th>
               <th>IMAGE</th>
@@ -110,7 +110,7 @@ function Imdbfetch() {
             {data.results.map((p, i) => (
               <tr key={i}>
                 <td> {i + 1}</td>
-                <td> {p.id}</td>
+                {/* <td> {p.id}</td> */}
                 <td>
                   {/* <Routes>
                     <Route
@@ -145,9 +145,19 @@ function Imdbfetch() {
                   </a>{' '}
                 </td> */}
                 <td>
-                  <img src={p.image} alt='img' width='150' height='150' />{' '}
+                  <img
+                    src={p.image}
+                    alt='img'
+                    width='150'
+                    height='150'
+                    style={{ margin: 20 }}
+                  />{' '}
                   <br />
-                  <Link to={`/Movies/${p.id}`} target='_blank'>
+                  <Link
+                    to={`/Movies/${p.id}`}
+                    target='_blank'
+                    style={{ margin: 30 }}
+                  >
                     View Details
                   </Link>
                   {/* <Routes>
